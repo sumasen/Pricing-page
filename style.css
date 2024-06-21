@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img1.jpg);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.pricing {
+    background-color: #63b2e4;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.plan {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.plan h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.plan p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan li {
+    margin-bottom: 0.5em;
+}
+
+.plan button.toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.plan .details {
+    display: none;
+}
+
+.plan .details p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.plan .details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan .details li {
+    margin-bottom: 0.5em;
+}
+
+.plan .details button.toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pricing {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing {
+        width: 90%;
+    }
+}
+
+button:hover{
+    transform: scale(1.1);
+}
